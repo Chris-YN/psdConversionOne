@@ -2,11 +2,369 @@
 
 
 // _home.scss
+//  ===============================
+//   ////////// header ///////////
+//  ===============================
 header{
   background-image: url(./assets/home-1.jpeg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 77vh;
+}
 
-  a{
-    color:black;
+
+
+//  ===============================
+//   ////// section .aboutUs //////
+//  ===============================
+.aboutUs{
+  background: $lightSage;
+}
+
+.aboutUs .wrapper{
+  padding: 18% 0 10% 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sectionAboutUsPicturesContainer{
+  width: 60%;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  img:nth-of-type(1){
+    justify-content: center;
+    width: 75%;
+  }
+  img:nth-of-type(2){
+  position: absolute;
+  width: 38%;
+  left: -4%;
+  top: -33%;
   }
 }
 
+.sectionABoutUsTextContainer{
+  width: 75%;
+  margin: 10% 0 0 0;
+
+  ul{
+    display: flex;
+    justify-content: space-between;
+    li{
+      width: 45%;
+    }
+  }
+}
+
+.sectionAboutUsTexts{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+
+
+//  ===============================
+//   ///// section .portfolio /////
+//  ===============================
+.portfolio{
+  background: $white;
+}
+.portfolio .wrapper{
+  padding: 10% 0 10% 0;
+}
+
+.sectionPortfolioCarouselContainer,
+.imgAndTextContainer{
+  display: flex;
+}
+
+.sectionPortfolioCarouselContainer{
+  align-items: center;
+  justify-content: space-around;
+  
+}
+
+.imgAndTextContainer{
+  flex-direction: column;
+  align-items: center;
+  img{
+    width: 28%;
+    border-radius: 50%;
+    margin: 0 0 5% 0;
+  }
+  p{
+    width: 65%;
+    text-align: center;
+  }
+}
+
+
+
+//  ===============================
+//   //// section .specialties ////
+//  ===============================
+.specialty{
+  background-image: url(./assets/home-4.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+.specialty .wrapper{
+  width: 100%;
+  padding:15% 0 15% 50%;
+  display: flex;
+}
+
+.sectionSpecialtyContainer{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.speacialtyIconAndTextContainer{
+  display: flex;
+  align-items: center;
+}
+
+.icons,
+.iconsM,
+.iconsP,
+.iconsS{
+  position: relative;
+  i:nth-of-type(1){
+    font-size: 3rem;
+  }
+  i:nth-of-type(2){
+    font-size: 1.5rem;
+    position: absolute;
+    left:12px;
+    top:12px;
+  }
+}
+.iconsM{
+  i:nth-of-type(2){
+    left:11px;
+  }
+}
+.iconsP{
+  i:nth-of-type(2){
+    left:15.5px;
+  }
+}
+.iconsS{
+  i:nth-of-type(2){
+    left:13.5px;
+  }
+}
+
+.specialty .wrapper{
+  ul{
+    margin-left: 5%;
+  }
+  ul:first-child{
+    margin-left: 0;
+  }
+}
+
+.speacialtyIconAndTextContainer{
+  margin-bottom:25%;
+}
+.sectionSpeacialtyContainer{
+  li:last-child{
+    margin-bottom: 0;
+  }
+}
+
+.speacialtyTextContainer{
+  margin-left: 14%;
+}
+
+
+
+//  ===============================
+//   //// section .meetOurTeam ////
+//  ===============================
+.meetOurTeam{
+  background-color: $white;
+}
+
+.meetOurTeam .wrapper{
+  padding: 10% 0 10% 0;
+}
+
+.meetOurTeam h2{
+  margin-bottom:9%;
+}
+
+.teamGalleryContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.galleryTile{
+  width: calc((100% - 48px) / 4);
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  margin-bottom:16px;
+}
+
+.teamGalleryContainer{
+  div:first-of-type{
+    background-color: $whiteTwo;
+    width: calc(((100% - 48px) / 4)*2 + 16px);
+    padding:10% 3% 3% 3%;
+  }
+  div:last-of-type{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 4% 0 4%;
+  }
+}
+h4{
+  margin-bottom:3%;
+}
+
+
+
+//  ===============================
+//   //// section .dropUsALine ////
+//  ===============================
+.dropUsALineContainer,
+.dropUsALineTextContainer{
+  display: flex;
+}
+.dropUsALineTextContainer{
+  background-color: $lightSage;
+  flex-direction: column;
+  align-items: center;
+  p{
+    text-align: center;
+  }
+  button{
+    border:none;
+    background-color: $white;
+    padding: 5% 5% 5% 5%;
+  }
+}
+.dropUsALineTextContainer{
+  width: 50%;
+  padding: 10% 10% 10% 10%;
+}
+.dropUsALineBackgroundContainer{
+  width: 50%;
+  background-image: url(./assets/home-10.jpeg);
+  background-size: cover;
+}
+.dropUsALine{
+  h2{
+    margin-bottom:15%;
+  }
+  p{
+    margin-bottom: 10%;
+  }
+}
+
+
+
+//  ===============================
+//   /////////// footer ///////////
+//  ===============================
+footer{
+  background-color: $black;
+  padding: 15% 0 5% 0;
+  color:$white;
+  p,
+  a{
+    color:$white
+  }
+}
+
+.footerContainer{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 20% 0;
+}
+
+.footerTextContainer{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+.footerContainer{
+  li:nth-child(2){
+    align-items: center;
+  }
+  li:nth-child(3){
+    align-items: end;
+  }
+}
+
+.snsLinkIconsContainer{
+  display: flex;
+  li{
+    font-size: 1rem;
+    margin-right: 5%;
+  }
+}
+
+footer h4{
+  margin-bottom: 18%;
+}
+
+footer p{
+  margin-bottom: 10%;
+}
+
+footer li{
+  font-size: 0.7rem;
+  margin-bottom: 3%;
+}
+.footerBlogLinks{
+  li{
+    list-style: disc;
+  }  
+}
+
+footer{
+  form{
+    width: 90%;
+    display: flex;
+    justify-content: end;
+  }
+  input{
+    width: 70%;
+    padding: 4%;
+    border:none;
+  }
+  button{
+    background-color: $lightSage;
+    width: 20%;
+    border: 0;
+  }
+}
+
+.footerBanner{
+  h4{
+    position: relative;
+    text-align: center;
+    &::before{
+      position: absolute;
+      content: "";
+      width: 110%;
+      border-bottom: 1px solid $darkerWhiteTwo;
+      left: -5%;
+    }
+  }
+}

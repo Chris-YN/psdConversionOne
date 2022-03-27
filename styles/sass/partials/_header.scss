@@ -1,0 +1,35 @@
+
+
+
+// _header.scss
+header{
+  
+  nav,
+  ul{
+    display: flex;
+  }
+  nav{
+    align-items: baseline;
+    padding-top:3%;
+    justify-content: space-between;
+  }
+  h1,
+  ul{
+    width:30%;
+  }
+  ul:nth-child(3){
+    justify-content: flex-end;
+  }
+  h1{
+    text-align: center;
+  }
+  li{
+    margin-left: 10%;
+  }
+  li:first-child{
+    margin-left: 0;
+  }
+  li:last-child{
+    margin-left: 5%;
+  }
+}

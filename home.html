@@ -17,7 +17,7 @@
   <!--// CSS import //-->
   <link rel="stylesheet" href="./styles/style.css">
 
-  <title>CREATIVE</title>
+  <title>thisOneIsMine</title>
 </head>
 
 
@@ -29,16 +29,22 @@
   ============================== -->
   <header>
     <div class="wrapper">
-      <h1>
-        cretive
-      </h1>
-      <nav>
-        <ul>
+      <nav class="topNavContainer">
+        <ul class="topNavAnchorContainer navText">
           <li><a href="">home</a></li>
           <li><a href="">blog</a></li>
           <li><a href="">portfolio</a></li>
+        </ul>
+
+        <h1>
+        cretive
+        </h1>
+
+        <ul class="topNavAnchorContainer navText">
           <li><a href="">shop</a></li>
           <li><a href="">contact</a></li>
+          <li><a href="#"><i class="fas fa-search"></i></a></li>
+          <li><a href="#"><i class="fas fa-shopping-bag"></i></a></li>
         </ul>
       </nav>
     <!-- header .wrapper ends   -->
@@ -53,35 +59,32 @@
   <section class="aboutUs">
     <div class="wrapper">
 
-      <ul>
-        <li>
-          <div class="sectionAboutUsPicturesContainer">
-            <img src="./styles/assets/home-2.jpeg" alt="Picture of desk with monitor and calendar">
-            <img src="./styles/assets/home-circle-text.png" alt="Branding and website pros">
-          </div>
-        </li>
-        <li>
-          <ul>
-            <li>
-              <div class="sectionAboutUsTextContainer">
-                <h3>branding</h3>
-                <p>
-                  Venture first mover advantage incubator metrics focus backing business-to-consumer.
-                </p>
-              </div>
-            </li>
-            <li>
-              <div class="sectionAboutUsTextContainer">
-                <h3>design & develop</h3>
-                <p>
-                  Venture first mover advantage incubator metrics focus backing business-to-consumer.
-                </p>
-              </div>
-            </li>
-          </ul>
-        </li>
-      </ul>
-
+      <div class="sectionAboutUsPicturesContainer"> 
+        <img src="./styles/assets/home-2.jpeg" alt="Picture of desk with monitor and calendar">           
+        <img src="./styles/assets/home-circle-text.png" alt="Text 'Branding and website pros'">
+      </div>
+      
+      <div class="sectionABoutUsTextContainer">
+        <ul>
+          <li>
+            <div class="sectionAboutUsTexts">
+              <h3>branding</h3>
+              <p>
+                Venture first mover advantage incubator metrics focus backing business-to-consumer.
+              </p>
+            </div>
+          </li>
+  
+          <li>
+            <div class="sectionAboutUsTexts">
+              <h3>design & develop</h3>
+              <p>
+                Venture first mover advantage incubator metrics focus backing business-to-consumer.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
     <!-- section aboutUs .wrapper ends   -->
     </div>
   </section>
@@ -93,19 +96,24 @@
   <section class="portfolio">
     <div class="wrapper">
 
-      <div class="sectionPortfolioCarouselAndTextContainer">
-        <div class="sectionPortfolioCarouselContainer">
+      <div class="sectionPortfolioCarouselContainer">
+        
           <i class="fas fa-chevron-left"></i>
-          <img src="./styles/assets/home-3.jpeg" alt="Portfolio image one. Layout with a picture of man in swiming short">
-          <i class="fas fa-chevron-right"></i>
-        </div>
 
-        <p>
-          Ecosystem ipad disruptive social media low hanging fruit stealth launch party handshake market branding. Pitch agile
-          development business plan stealth channels prototype mass market product management value proposition startup strategy.
-          Product management early adopters user experience metrics advisor gamification responsive web design hackathon termsheet
-          backing series.
-        </p>
+          <div class="imgAndTextContainer">
+            <img src="./styles/assets/home-3.jpeg" alt="Portfolio image one. Layout with a picture of man in swiming short">
+            <p class="pLight">
+            Ecosystem ipad disruptive social media low hanging fruit stealth launch party handshake market branding. Pitch agile
+            development business plan stealth channels prototype mass market product management value proposition startup strategy.
+            Product management early adopters user experience metrics advisor gamification responsive web design hackathon termsheet
+            backing series.
+            </p>
+          </div>
+
+          <i class="fas fa-chevron-right"></i>
+        
+
+        
       </div>
     <!-- section portfolio .wrapper ends -->
     </div>
@@ -121,99 +129,89 @@
     <div class="wrapper">
 
       <ul class="sectionSpeacialtyContainer">
-        <li>
-          <div class="speacialtyIconAndTextContainer">
-            <div class="icons">
-              <i class="far fa-circle"></i>
-              <i class="fas fa-magic iconStackTweek"></i>
-            </div>
-          
-            <div class="speacialtyTextContainer">
-              <h3>unique design</h3>
-              <p>
-                Twitter validation first mover advantage advisor angel investor beta churn rate low hanging fruit burn.
-              </p>
-            </div>
+        <li class="speacialtyIconAndTextContainer">
+          <div class="icons">
+            <i class="far fa-circle"></i>
+            <i class="fas fa-magic iconStackTweek"></i>
+          </div>
+        
+          <div class="speacialtyTextContainer">
+            <h3>unique design</h3>
+            <p class="pLight">
+              Twitter validation first mover advantage advisor angel investor beta churn rate low hanging fruit burn.
+            </p>
           </div>
         </li>
 
-        <li>
-          <div class="speacialtyIconAndTextContainer">
-            <div class="icons">
-              <i class="far fa-circle"></i>
-              <i class="fas fa-desktop iconStackTweek iconStackTweekOne"></i>
-            </div>
-          
-            <div class="speacialtyTextContainer">
-              <h3>RETINA READY</h3>
-              <p>
-                Twitter validation first mover advantage advisor angel investor beta churn rate low hanging fruit burn.
-              </p>
-            </div>
+        <li class="speacialtyIconAndTextContainer">
+          <div class="iconsM">
+            <i class="far fa-circle"></i>
+            <i class="fas fa-desktop iconStackTweek iconStackTweekOne"></i>
+          </div>
+        
+          <div class="speacialtyTextContainer">
+            <h3>RETINA READY</h3>
+            <p class="pLight">
+              Twitter validation first mover advantage advisor angel investor beta churn rate low hanging fruit burn.
+            </p>
+          </div>         
+        </li>
+
+        <li class="speacialtyIconAndTextContainer">
+          <div class="icons">
+            <i class="far fa-circle"></i>
+            <i class="fas fa-sliders-h iconStackTweek"></i>
+          </div>
+        
+          <div class="speacialtyTextContainer">
+            <h3>advanced options</h3>
+            <p class="pLight">
+              Twitter validation first mover advantage advisor angel investor beta churn rate low hanging fruit burn.
+            </p>
+          </div>
+        </li>
+      </ul>
+
+      <ul class="sectionSpeacialtyContainer">
+        <li class="speacialtyIconAndTextContainer">
+          <div class="iconsP">
+            <i class="far fa-circle"></i>
+            <i class="fas fa-map-pin iconStackTweek iconStackTweekTwo"></i>
+          </div>
+        
+          <div class="speacialtyTextContainer">
+            <h3>seo marketing</h3>
+            <p class="pLight">
+              Twitter validation first mover advantage advisor angel investor beta churn rate low hanging fruit burn.
+            </p>
           </div>
         </li>
 
-        <li>
-          <div class="speacialtyIconAndTextContainer">
-            <div class="icons">
-              <i class="far fa-circle"></i>
-              <i class="fas fa-sliders-h iconStackTweek"></i>
-            </div>
-          
-            <div class="speacialtyTextContainer">
-              <h3>advanced options</h3>
-              <p>
-                Twitter validation first mover advantage advisor angel investor beta churn rate low hanging fruit burn.
-              </p>
-            </div>
+        <li class="speacialtyIconAndTextContainer">
+          <div class="iconsS">
+            <i class="far fa-circle"></i>
+            <i class="fas fa-shopping-bag iconStackTweek iconStackTweekThree"></i>
+          </div>
+        
+          <div class="speacialtyTextContainer">
+            <h3>ecommerce ready</h3>
+            <p class="pLight">
+              Twitter validation first mover advantage advisor angel investor beta churn rate low hanging fruit burn.
+            </p>
           </div>
         </li>
 
-        <li>
-          <div class="speacialtyIconAndTextContainer">
-            <div class="icons">
-              <i class="far fa-circle"></i>
-              <i class="fas fa-map-pin iconStackTweek iconStackTweekTwo"></i>
-            </div>
-          
-            <div class="speacialtyTextContainer">
-              <h3>seo marketing</h3>
-              <p>
-                Twitter validation first mover advantage advisor angel investor beta churn rate low hanging fruit burn.
-              </p>
-            </div>
+        <li class="speacialtyIconAndTextContainer">
+          <div class="icons">
+            <i class="far fa-circle"></i>
+            <i class="fas fa-smile iconStackTweek"></i>
           </div>
-        </li>
-
-        <li>
-          <div class="speacialtyIconAndTextContainer">
-            <div class="icons">
-              <i class="far fa-circle"></i>
-              <i class="fas fa-shopping-bag iconStackTweek iconStackTweekThree"></i>
-            </div>
-          
-            <div class="speacialtyTextContainer">
-              <h3>ecommerce ready</h3>
-              <p>
-                Twitter validation first mover advantage advisor angel investor beta churn rate low hanging fruit burn.
-              </p>
-            </div>
-          </div>
-        </li>
-
-        <li>
-          <div class="speacialtyIconAndTextContainer">
-            <div class="icons">
-              <i class="far fa-circle"></i>
-              <i class="fas fa-smile iconStackTweek"></i>
-            </div>
-          
-            <div class="speacialtyTextContainer">
-              <h3>customizable</h3>
-              <p>
-                Twitter validation first mover advantage advisor angel investor beta churn rate low hanging fruit burn.
-              </p>
-            </div>
+        
+          <div class="speacialtyTextContainer">
+            <h3>customizable</h3>
+            <p class="pLight">
+              Twitter validation first mover advantage advisor angel investor beta churn rate low hanging fruit burn.
+            </p>
           </div>
         </li>
       </ul>
@@ -235,7 +233,7 @@
         <div class="teamGalleryContainer">
           <div class="galleryTile">
             <h4>team players</h4>
-            <p>
+            <p class="pLight">
               Pitch client interaction design ownership disruptive leverage prototype conversion. Deployment calidation gen-z
               disruptive paradigm shift churn rate niche marketing graphical user interface.
             </p>
@@ -281,14 +279,16 @@
   <section class="dropUsALine">
     <div class="dropUsALineContainer">
       <div class="dropUsALineTextContainer">
-        <h3>drop us a line</h3>
-        <p>
+        <h2>drop us a line</h2>
+        <p class="pLight">
           Pitch client interaction design ownership disruptive leverage prototype conversion. Deployment calidation gen-z
           disruptive paradigm shift churn rate niche marketing graphical user interface.
         </p>
         <button>
           view portfolio
         </button>
+      </div>
+      <div class="dropUsALineBackgroundContainer">
       </div>
     </div>
   </section>
@@ -301,48 +301,46 @@
   <footer>
     <div class="wrapper">
 
-      <div class="footerContainer">
-        <ul class="footerContainer">
-          <li class="footerTextContainer">
-            <h4>contact us</h4>
-            <p>
-              6591 Orchard Street, NY 10002, United States<br>
-              Email: contac@onepro.co,<br>
-              Phone 01: +00 (9) 123 3456 789<br>
-              Phone 02: +00 (9) 123 3456 789<br>
-              Fax: 00 (9) 643 6543 898
-            </p>
+      <ul class="footerContainer">
+        <li class="footerTextContainer">
+          <h4>contact us</h4>
+          <p>
+            6591 Orchard Street, NY 10002, United States<br>
+            Email: contac@onepro.co,<br>
+            Phone 01: +00 (9) 123 3456 789<br>
+            Phone 02: +00 (9) 123 3456 789<br>
+            Fax: 00 (9) 643 6543 898
+          </p>
 
-            <ul class="snsLinkIconsFlexParent">
-              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-              <li class="test"><a href="#"><i class="fab fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-            </ul>
-          </li>
-    
-          <li class="footerTextContainer">
-            <h4>recent posts</h4>
-            <ul>
-              <li><a href="#">Conversion hackathon partner</a></li>
-              <li><a href="#">Network channels entrepreneur</a></li>
-              <li><a href="#">Return on investment creative</a></li>
-              <li><a href="#">Assets interaction design venture</a></li>
-              <li><a href="#">infographic learning curve</a></li>
-            </ul>
-          </li>
-    
-          <li class="footerTextContainer">
-            <h4>twitter widget</h4>
-            <p>Signup for email and notification below</p>
-            <form action="">
-              <input type="email" id="email" name="email" placeholder="Enter your email">
-              <label for="email" class="sr-only">Email address</label>
+          <ul class="snsLinkIconsContainer">
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li class="test"><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+        </li>
+  
+        <li class="footerTextContainer">
+          <h4>recent posts</h4>
+          <ul class="footerBlogLinks">
+            <li><a href="#">Conversion hackathon partner</a></li>
+            <li><a href="#">Network channels entrepreneur</a></li>
+            <li><a href="#">Return on investment creative</a></li>
+            <li><a href="#">Assets interaction design venture</a></li>
+            <li><a href="#">infographic learning curve</a></li>
+          </ul>
+        </li>
+  
+        <li class="footerTextContainer">
+          <h4>twitter widget</h4>
+          <p>Signup for email and notification below</p>
+          <form action="">
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+            <label for="email" class="sr-only">Email address</label>
 
-              <button><i class="fas fa-long-arrow-alt-right"></i></button>
-            </form>
-          </li>
-        </ul>
-      </div>
+            <button><i class="fas fa-long-arrow-alt-right"></i></button>
+          </form>
+        </li>
+      </ul>
 
       <div class="footerBanner">
         <h4>creative agency</h4>

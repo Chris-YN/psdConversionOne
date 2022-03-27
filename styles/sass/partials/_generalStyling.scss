@@ -2,16 +2,17 @@
 
 
 // _generalStyling.scss
-html{
-  background-color: $testBackground;
-}
-
-
 h1,
 h2,
 h3,
 h4,
-header li
+header a,
 button {
   text-transform: uppercase;
+}
+
+
+.wrapper{
+  width: 90%;
+  margin: 0 auto;
 }
