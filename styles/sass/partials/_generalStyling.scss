@@ -6,6 +6,7 @@ h1,
 h2,
 h3,
 h4,
+h5,
 header a,
 button {
   text-transform: uppercase;
@@ -13,6 +14,52 @@ button {
 
 
 .wrapper{
-  width: 90%;
+  width: 70%;
   margin: 0 auto;
+}
+
+.greyLineVertical{
+  position: relative;
+
+  &::after{
+    height: 15%;
+    position: absolute;
+    left: 50%;
+    bottom:-8%;
+    content: "";
+    border-right: 1px solid $grey;
+  }
+}
+
+.greyLineHorizontal {
+  position: relative;
+  &::before {
+    // set width and left starting position on the element accordingly
+    // set color if not black
+    position: absolute;
+    content: "";
+    border-bottom: 1px solid;
+    top: -30px;
+  }
+}
+.glhBlog {
+  &::before {
+    width: 100%;
+    left: 0;
+    border-color: $lighterGrey;
+  }
+}
+
+.buttonOne{
+  &:hover{
+    background-color: $grey;
+    color: $white;
+  }
+}
+
+.buttonSubmit{
+  &:hover{
+    background-color: $darkSage;
+    color: $white;
+  }
 }

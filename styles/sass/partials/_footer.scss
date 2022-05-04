@@ -1,0 +1,101 @@
+
+
+
+// _footer.scss
+footer {
+  background-color: $black;
+  padding: 15% 0 30px 0;
+  color: $white;
+
+  p,
+  a {
+    color: $white
+  }
+}
+
+.footerContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 15% 0;
+}
+
+.footerTextContainer {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footerContainer {
+  li:nth-child(2) {
+    align-items: center;
+  }
+
+  li:nth-child(3) {
+    align-items: end;
+  }
+}
+
+.snsLinkIconsContainer {
+  display: flex;
+
+  li {
+    font-size: 1rem;
+    margin-right: 5%;
+  }
+}
+
+footer h4 {
+  margin-bottom: 18%;
+}
+
+footer p {
+  margin-bottom: 10%;
+}
+
+footer li {
+  font-size: 0.7rem;
+  margin-bottom: 3%;
+}
+
+.footerBlogLinks {
+  li {
+    list-style: disc;
+  }
+}
+
+footer {
+  form {
+    width: 90%;
+    display: flex;
+    justify-content: end;
+  }
+
+  input {
+    width: 70%;
+    padding: 4%;
+    border: none;
+  }
+
+  button {
+    background-color: $lightSage;
+    width: 20%;
+    border: 0;
+  }
+}
+
+.footerBanner {
+  text-align: center;
+
+  &::before {
+    // width and left position changes according to the .wrapper %
+    width: 142%;
+    left: -21%;
+    border-color: $darkerWhiteTwo;
+  }
+
+  h4 {
+    margin: 0;
+    font-weight: 400;
+  }
+
+}

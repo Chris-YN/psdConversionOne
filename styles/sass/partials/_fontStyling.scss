@@ -2,10 +2,17 @@
 
 
 // _fontStyling.scss
-
-// home.html
-h1{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
     font-family: 'Montserrat', sans-serif;
+}
+
+
+h6{
     font-size: 1.85rem;
     font-weight: 700;
     letter-spacing: 0.02rem;
@@ -13,7 +20,6 @@ h1{
 
 
 h2{
-    font-family: 'Montserrat', sans-serif;
     font-size: 1.1rem;
     font-weight: 500;
     letter-spacing: 0.1rem;
@@ -22,7 +28,6 @@ h2{
 
 
 h3{
-    font-family: 'Montserrat', sans-serif;
     font-size: 0.9rem;
     font-weight: 500;
     letter-spacing: 0.1rem;
@@ -30,10 +35,16 @@ h3{
 
 
 h4{
-    font-family: 'Montserrat', sans-serif;
     font-size: 0.8rem;
     font-weight: 500;
     letter-spacing: 0.02rem;
+}
+
+
+h5{
+    font-size: 2.6rem;
+    font-weight: 700;
+    letter-spacing: 0.05rem;
 }
 
 
@@ -54,8 +65,12 @@ p{
     font-family: 'Open Sans', sans-serif;
     font-size: 0.7rem;
     line-height: 1.2rem;
-    letter-spacing: 0.021rem;
+    letter-spacing: 0.015rem;
     color: $black;
+}
+.pBold{
+    font-weight: 700;
+    color: $defaultBlack;
 }
 .pLight{
     color:$darkerWhiteTwo;

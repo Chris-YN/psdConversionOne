@@ -5,13 +5,15 @@
 //  ===============================
 //   ////////// header ///////////
 //  ===============================
-header{
+.homeHeader{
   background-image: url(./assets/home-1.jpeg);
   background-position: center;
   background-size: cover;
   width: 100%;
   height: 77vh;
 }
+
+
 
 
 
@@ -23,7 +25,7 @@ header{
 }
 
 .aboutUs .wrapper{
-  padding: 18% 0 10% 0;
+  padding: 20% 0 10% 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -120,7 +122,9 @@ header{
   width: 100%;
   padding:15% 0 15% 50%;
   display: flex;
+  position: relative;
 }
+
 
 .sectionSpecialtyContainer{
   display: flex;
@@ -195,7 +199,7 @@ header{
 }
 
 .meetOurTeam .wrapper{
-  padding: 10% 0 10% 0;
+  padding: 15% 0 10% 0;
 }
 
 .meetOurTeam h2{
@@ -232,8 +236,8 @@ header{
     padding: 0 4% 0 4%;
   }
 }
-h4{
-  margin-bottom:3%;
+.meetOurTeam h4{
+  margin-bottom:4%;
 }
 
 
@@ -273,98 +277,5 @@ h4{
   }
   p{
     margin-bottom: 10%;
-  }
-}
-
-
-
-//  ===============================
-//   /////////// footer ///////////
-//  ===============================
-footer{
-  background-color: $black;
-  padding: 15% 0 5% 0;
-  color:$white;
-  p,
-  a{
-    color:$white
-  }
-}
-
-.footerContainer{
-  display: flex;
-  justify-content: space-between;
-  margin: 0 0 20% 0;
-}
-
-.footerTextContainer{
-  width: 30%;
-  display: flex;
-  flex-direction: column;
-}
-.footerContainer{
-  li:nth-child(2){
-    align-items: center;
-  }
-  li:nth-child(3){
-    align-items: end;
-  }
-}
-
-.snsLinkIconsContainer{
-  display: flex;
-  li{
-    font-size: 1rem;
-    margin-right: 5%;
-  }
-}
-
-footer h4{
-  margin-bottom: 18%;
-}
-
-footer p{
-  margin-bottom: 10%;
-}
-
-footer li{
-  font-size: 0.7rem;
-  margin-bottom: 3%;
-}
-.footerBlogLinks{
-  li{
-    list-style: disc;
-  }  
-}
-
-footer{
-  form{
-    width: 90%;
-    display: flex;
-    justify-content: end;
-  }
-  input{
-    width: 70%;
-    padding: 4%;
-    border:none;
-  }
-  button{
-    background-color: $lightSage;
-    width: 20%;
-    border: 0;
-  }
-}
-
-.footerBanner{
-  h4{
-    position: relative;
-    text-align: center;
-    &::before{
-      position: absolute;
-      content: "";
-      width: 110%;
-      border-bottom: 1px solid $darkerWhiteTwo;
-      left: -5%;
-    }
   }
 }
