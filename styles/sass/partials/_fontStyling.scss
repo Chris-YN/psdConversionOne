@@ -7,11 +7,12 @@ h2,
 h3,
 h4,
 h5,
-h6{
+h6,
+header a,
+button {
     font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
 }
-
-
 h6{
     font-size: 1.85rem;
     font-weight: 700;

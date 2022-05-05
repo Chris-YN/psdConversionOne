@@ -2,25 +2,18 @@
 
 
 // _generalStyling.scss
-h1,
-h2,
-h3,
-h4,
-h5,
-header a,
-button {
-  text-transform: uppercase;
-}
-
-
 .wrapper{
   width: 70%;
   margin: 0 auto;
 }
 
+
+
+//  ===============================
+//   ////// greyLine suedos //////
+//  ===============================
 .greyLineVertical{
   position: relative;
-
   &::after{
     height: 15%;
     position: absolute;
@@ -31,11 +24,23 @@ button {
   }
 }
 
+.glvContact{
+  // this is for .greyLinevertical on contact page 
+  &::after {
+    height: 120%;
+    position: absolute;
+    right: 0;
+    bottom: -10%;
+    content: "";
+    border-right: 1px solid $lighterGrey;
+  }
+}
+
 .greyLineHorizontal {
   position: relative;
   &::before {
     // set width and left starting position on the element accordingly
-    // set color if not black
+    // set color if desired color is not black
     position: absolute;
     content: "";
     border-bottom: 1px solid;
@@ -43,12 +48,15 @@ button {
   }
 }
 .glhBlog {
+  // this is for .greyLineHorizontal on blog page 
   &::before {
     width: 100%;
     left: 0;
     border-color: $lighterGrey;
   }
 }
+
+
 
 .buttonOne{
   &:hover{

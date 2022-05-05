@@ -1,0 +1,120 @@
+// _bp450.scss
+@media (max-width: 450px) {
+  //  ===============================
+  //   ////////// general ///////////
+  //  ===============================
+  .wrapper{
+    width: 95%;
+  }
+
+
+
+  //  ===============================
+  //   ///////// home.html //////////
+  //  ===============================
+  .sectionAboutUsPicturesContainer{
+    width: 70%;
+  }
+
+  .greyLineVertical{
+    &::after{
+      height: 8%;
+      bottom: -4%;
+    }
+  }
+
+  .dropUsALineBackgroundContainer{
+    background-position-x: center;
+  }
+
+
+  //  ===============================
+  //   ///////// blog.html //////////
+  //  ===============================
+
+
+
+  //  ===============================
+  //   /////// contact.html ////////
+  //  ===============================
+  .contactDetailInfoContainer{
+    flex-direction: column;
+
+    p{
+      margin-top: 0;
+    }
+
+    .contactInfoPanel{
+      width: 100%;
+      div {
+        margin: 5% 0 0 25%;
+        width: 300px;
+        
+        flex-direction: row;
+
+        p:nth-child(2){
+          display: none;
+        }
+        p:nth-child(3){
+          margin-left: 5%;
+        }
+      }
+    }
+    .greyLineVertical,
+    .glvContact{
+      &::after{
+        border: none;
+      }
+    }
+  }
+
+
+
+  //  ===============================
+  //   ///////// home.html //////////
+  //  ===============================
+  .footerContainer{
+    flex-direction: column;
+
+    li{
+      width: 100%;
+      margin-bottom: 8%;
+    }
+
+    .snsLinkIconsContainer{
+      width: 90px;
+      margin: 0 auto;
+    }
+
+    h4{
+      margin-bottom: 5%;
+    }
+
+    p{
+      margin-bottom: 5%;
+    }
+
+    .snsLinkIconsContainer,
+    .footerTextContainer{
+      text-align: center;
+    }
+    .footerContainer{
+      li:nth-child(3){
+        align-items: center;
+      }
+    }
+    // #footerTwitter{
+    //   align-items: center;
+    // }
+  }
+  footer{
+    .footerContainer{
+      li:nth-child(3){
+        align-items: center;
+      }
+    }
+    form{
+      justify-content: center;
+    }
+  }
+}

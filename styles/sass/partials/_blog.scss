@@ -9,6 +9,7 @@
   background-image: url(./assets/blog-1.jpeg);
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   width: 100%;
   height: 67vh;
 }
@@ -53,7 +54,7 @@
   display: flex;
   align-items: center;
   img{
-    width: 35%;
+    width: 73px;
     border-radius: 50%;
   }
   div{
@@ -160,71 +161,8 @@ h6{
   }
 
   margin-top: 10%;
-
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-
-  div:first-child,
-  div:nth-child(2),
-  div:nth-child(3){
-    width: calc(100% / 3 - 10px);
-    input{
-      width: 100%;
-    }
-  }
-  
-  .textareaContainer{
-    width: 100%;
-    height: 200px;
-    margin-top: 5%;
-  }
-  textarea{
-    width: 100%;
-    height: 100%;
-    resize: none;
-  }
-  
-  // input::placeholder{
-  //   &:hover{
-  //     color:aqua
-  //   }
-  //   color: purple;
-  // }
-
-  input,
-  textarea,
-  button{
-    border: none;
-    border-bottom: 1px solid $grey;
-
-    &:hover{
-      &::placeholder{
-        color: darkgrey;
-      }
-      border-bottom: 1.5px solid $black;
-    }
-
-    &:focus{
-      outline: none;
-      background-color: $lighterGrey;
-    }
-  }
-
-  button{
-    margin-top: 40%;
-    background: none;
-    
-    font-weight: 500;
-
-    &:hover{
-      background-color: $lighterGrey;
-    }
-  }
 }
 
 .leaveComment{
   margin-bottom: 13%;
 }
-
-

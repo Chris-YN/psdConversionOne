@@ -1,0 +1,108 @@
+
+
+
+// _bp576.scss
+@media (max-width: 576px){
+  //  ===============================
+  //   ////////// header ///////////
+  //  ===============================
+  .topNavContainer{
+    position: relative;
+    ul{
+      display: none;
+    }
+
+    .hambergerMenu{
+      display: block;
+      width: 100%;
+
+      i{
+        font-size: 1.4rem;
+        margin:2.5% 2% 0 0;
+      }
+
+      text-align: right;
+
+      &:hover{
+        cursor: pointer;
+        color: $grey;
+      }
+    }
+
+    h1{
+      position: absolute;
+      left: 0;
+      top: 30%;
+    }
+  }
+
+
+
+  //  ===============================
+  //   ///////// home.html //////////
+  //  ===============================
+
+  .speacialtyTextContainer{
+    margin-left: 8%;
+  }
+
+
+
+  //  ===============================
+  //   ///////// blog.html //////////
+  //  ===============================
+  .blogHeader{
+    height: 350px;
+    background-size: contain;
+  }
+
+  .relatedPosts,
+  .comments,
+  .leaveComment{
+    h6{
+      font-size: 1.2rem;
+    }
+  }
+
+  .blogMainAutorContainer{
+    img{
+      width: 55px;
+    }
+  }
+
+  .blogMainInfo{
+    h4{
+      text-align: center;
+    }
+  }
+
+  .formContainer{
+    &::before{
+      top: -45px;
+    }
+  }
+
+
+
+  //  ===============================
+  //   /////// contact.html ////////
+  //  ===============================
+  h1{
+    z-index: 5;
+  }
+
+  .headerImgContainer{
+    background-position: left;
+  }
+
+  .contactIntroContainer p{
+    width: 100%;
+  }
+
+  .contactDetailInfoContainer{
+    width: 100%;
+  }
+
+
+
+}

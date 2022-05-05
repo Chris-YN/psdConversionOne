@@ -8,7 +8,16 @@
 @import "./partials/generalStyling";
 @import "./partials/header";
 @import "./partials/footer";
+@import "./partials/contactForm";
 @import "./partials/home";
 @import "./partials/blog";
 @import "./partials/contact";
 @import "./partials/shop";
+
+// break points numbers represent width in pixel
+@import "./partials/bp992";
+@import "./partials/bp768";
+@import "./partials/bp576";
+@import "./partials/bp480";
+@import "./partials/bp450";
+@import "./partials/bp320";

@@ -10,3 +10,9 @@ testStyle.css
 ### psd Briefs ###
 ##################
 project-1-creative/
+
+
+##################
+### etc ignore ###
+##################
+*.txt

@@ -1,0 +1,131 @@
+
+
+
+// _bp320.scss
+@media (max-width: 320px) {
+  //  ===============================
+  //   ////////// header ///////////
+  //  ===============================
+  .topNavContainer{
+    .hambergerMenu{
+      i{
+        margin: 5% 2% 0 0;
+      }
+    }
+  }
+
+
+
+  //  ===============================
+  //   ///////// home.html //////////
+  //  ===============================
+  .homeHeader{
+    height: 300px;
+  }
+
+
+  .sectionAboutUsPicturesContainer {
+    width: 80%;
+  }
+  
+  .sectionABoutUsTextContainer{
+    ul{
+      flex-direction: column;
+
+      li{
+        width: 100%;
+      }
+
+      li:nth-of-type(2){
+        margin-top: 6%;
+      }
+    }
+
+  }
+
+  .specialty .wrapper{
+    flex-direction: column;
+
+    ul:nth-Child(2){
+      margin: 12% 0 0 0;
+    }
+  }
+
+  .sectionMeetOurTeamContainer{
+    margin-top: 20%;
+  }
+
+  .teamGalleryContainer{
+    div:first-of-type{
+      width: 100%;
+    }
+  }
+  .galleryTile{
+    width: calc((100% - 24px) / 3);
+  }
+
+  .dropUsALineContainer{
+    flex-direction: column;
+    .dropUsALineTextContainer,
+    .dropUsALineBackgroundContainer{
+      width: 100%;
+      height: 280px;
+    }
+  }
+  
+
+
+
+  //  ===============================
+  //   ///////// blog.html //////////
+  //  ===============================
+  .blogHeader{
+    height: 250px;
+  }
+
+  .blogMain{
+    h5{
+      font-size: 1.8rem;
+      // margin-top: 9%;
+    }
+  }
+
+  .relatedPosts,
+  .comments,
+  .leaveComment {
+    h6 {
+      font-size: 1.0rem;
+    }
+  }
+
+  .blogMainInfo{
+    .blogMainAutorContainer{
+      margin-top: 7%;
+    }
+  }
+
+  .glhBlog {
+    &::before {
+      top: -15px;
+    }
+  }
+  
+  .formContainer {
+    &::before {
+      top: -24px;
+    }
+  }
+
+
+  //  ===============================
+  //   /////// contact.html ////////
+  //  ===============================
+  .contactIntroContainer{
+    margin-top: 25%;
+    text-align: center;
+  }
+
+  .getInTouchImg{
+    height: 200px;
+  }
+}
