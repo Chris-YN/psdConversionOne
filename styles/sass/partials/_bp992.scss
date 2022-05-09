@@ -9,6 +9,12 @@
 .hambergerMenu{
   display: none;
 }
+.hambergerNavContainer{
+  display: block;
+}
+.hambergerNavToggle{
+  display: none;
+}
 
 
 @media (max-width: 992px){

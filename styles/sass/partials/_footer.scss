@@ -92,8 +92,8 @@ footer {
 
   &::before {
     // width and left position changes according to the .wrapper %
-    width: 142%;
-    left: -21%;
+    width: 100%;
+    left: 0;
     border-color: $darkerWhiteTwo;
   }
 
