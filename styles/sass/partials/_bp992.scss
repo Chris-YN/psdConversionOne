@@ -9,7 +9,10 @@
 .hambergerMenu{
   display: none;
 }
-.hambergerNav{
+.hambergerNavContainer{
+  display: block;
+}
+.hambergerNavToggle{
   display: none;
 }
 
