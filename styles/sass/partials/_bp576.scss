@@ -2,11 +2,17 @@
 
 
 // _bp576.scss
+
+// min-width rule prevents hambergerNav showing
+// if viewport resizes while hamberger nav is visible
 @media (min-width: 577px) {
   .hambergerNavContainer {
     display: none;
   }
 }
+
+
+
 @media (max-width: 576px){
   //  ===============================
   //   ////////// header ///////////
